@@ -15,12 +15,8 @@ The end result should look something like this:
 https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
-//cspell: enable
-console.dir(document);
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
-
   const ul = document.createElement('ul');
   ul.className = 'ulStyle';
   books.forEach((book) => {

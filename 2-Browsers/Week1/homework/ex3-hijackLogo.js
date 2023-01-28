@@ -15,34 +15,6 @@ function hijackGoogleLogo() {
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBr-FYR6fsOqgUcOSnddoy8riOonhbMZIPQ&usqp=CAU';
   img.srcset =
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBr-FYR6fsOqgUcOSnddoy8riOonhbMZIPQ&usqp=CAU';
-
-  // const button = document.getElementById('gbqfba');
-  // button.innerHTML = 'Yahoooo!';
-
-  // const logo = document.querySelector('img[alt="Google"]');
-  // logo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-  // logo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-
-  // const logo = document.querySelector('.lnXdpd');
-  // logo.src =
-  //   'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e335ffb8025_hyfcartoon.svg';
-  // logo.srcset =
-  //   'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e335ffb8025_hyfcartoon.svg';
-
-  // <img
-  //   class="lnXdpd"
-  //   alt="Google"
-  //   height="92"
-  //   src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-  //   srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x"
-  //   width="272"
-  //   data-atf="1"
-  //   data-frt="0"
-  // ></img>;
-
-  // const logo = document.querySelector('.lnXdpd');
-  //  logo.src = 'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e335ffb8025_hyfcartoon.svg';
-  //  logo.srcset = 'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e335ffb8025_hyfcartoon.svg';
 }
 
 hijackGoogleLogo();
