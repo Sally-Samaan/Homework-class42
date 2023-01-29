@@ -9,15 +9,15 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 function main() {
-  const nickname = document.getElementById('nickname');
-  nickname.textContent = 'sal';
-  const favFood = document.getElementById('fav-food');
-  favFood.textContent = 'Makloubi';
-  const homeTown = document.getElementById('hometown');
-  homeTown.textContent = 'Damascus';
+  function setTextContent(elementId, content) {
+    const element = document.getElementById(elementId);
+    element.textContent = content;
+  }
+  setTextContent('nickname', 'sal');
+  setTextContent('fav-food', 'Makloubi');
+  setTextContent('hometown', 'Damascus');
   const item = document.querySelectorAll('li');
   item.forEach((i) => i.classList.add('list-item'));
-  console.log(item);
 }
 
 window.addEventListener('load', main);
