@@ -30,13 +30,15 @@ async function fetchData(url) {
     if (response.ok) {
       const dataJson = await response.json();
       return dataJson;
+    } else {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
   } catch (e) {
     throw new Error(e);
   }
 }
 
-function fetchAndPopulatePokemons(pokemonName, pokemonURL) {
+function fetchAndAddPokemons(pokemonName, pokemonURL) {
   //imageElement
   const image = document.createElement('img');
   image.src = '';
@@ -99,7 +101,7 @@ function main() {
         return x.url;
       });
 
-      fetchAndPopulatePokemons(pokemonName, pokemonURL);
+      fetchAndAddPokemons(pokemonName, pokemonURL);
     })
     .catch((e) => {
       console.log(e);

@@ -15,8 +15,8 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  const map1 = dice.map((x) => rollDie(x));
-  return Promise.race(map1);
+  const roll = dice.map((x) => rollDie(x));
+  return Promise.race(roll);
 }
 
 // Refactor this function to use async/await and try/catch
