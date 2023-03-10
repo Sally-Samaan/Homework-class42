@@ -17,6 +17,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -46,7 +47,7 @@ function createGame(context, numRows, numColumns) {
   // Draw a cell onto the canvas
   function drawCell(cell) {
     // Draw cell background
-    context.fillStyle = '#303030';
+    context.fillStyle = `rgba(24, 215, 236,${opacity})`;
     context.fillRect(
       cell.x * CELL_SIZE,
       cell.y * CELL_SIZE,
@@ -109,6 +110,9 @@ function createGame(context, numRows, numColumns) {
         // Living cell dies, dead cell remains dead
         cell.nextAlive = false;
       }
+      if (cell.alive && cell.nextAlive) cell.lifeTime++;
+      else if (cell.alive && !cell.nextAlive) cell.lifeTime === 0;
+      else if (!cell.alive && cell.nextAlive) cell.lifeTime === 1;
     });
 
     // Apply the newly computed state to the cells

@@ -25,4 +25,4 @@ function catWalk() {
   // TODO complete this function
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener();
